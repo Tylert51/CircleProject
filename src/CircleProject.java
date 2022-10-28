@@ -9,10 +9,8 @@ public class CircleProject {
         int n = s.nextInt();
 
         int lowestNum = 0;
-        int counter = 1;
-        while (lowestNum <= n) {
-            lowestNum = (int) Math.pow(2,counter);
-            counter++;
+        for (int i = 1; lowestNum < n; i++) {
+            lowestNum = (int) Math.pow(2,i);
         }
         lowestNum /= 2;
 
